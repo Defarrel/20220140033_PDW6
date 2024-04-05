@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boku no kokoro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <div id="background-video" class="background-video">
+        <header class="list">
+            <ul>
+                <li><a href="#background-video">Video</a></li>
+                <li><a href="#section2">Foto</a></li> 
+                <li><a href="#section3">Audio</a></li> 
+            </ul>
+        </header>
+        <video autoplay muted loop preload="auto">
+            <source src="image/y2mate.com - YAMADA ANNA EP06 4K 60FPS TWIXTOR CC and NO CC  Boku no Kokoro no Yabai Yatsu_1080pFHR - Trim.mp4" type="video/mp4">
+        </video>
+        <div class="bottom-color"></div>
+        <div class="content">
+            <div class="judul">僕の心のヤバイやつ</div>
+            <div class="deskripsi">The Dangers in My Heart adalah serial manga asal Jepang yang ditulis dan diilustrasikan oleh Norio Sakurai. Mulai diserialisasi di Weekly Shōnen Champion pada Maret 2018 lalu pindah ke Champion Cross, sebelum dipindahkan lagi ke Manga Cross. Telah diterbitkan dalam sembilan volume tankōbon.</div>
+            <div class="button-container">
+                <button class="button-video" onclick="showSwal()">Klik di sini</button>
+        </div>
+        </div>
+    </div>
+    <div id="section2" class = "section2">
+        <div class="container">
+            <div class="box box-1" style="--img: url('image/ichikawa1.jpg');" data-text="Ichikawa Kyoutarou"></div>
+            <div class="box box-2" style="--img: url('image/yamada1.jpeg');" data-text="Yamada Anna"></div>
+            <div class="box box-3" style="--img: url('image/ichikawakanna1.jpeg');" data-text="Ichikawa Kanna"></div>
+            <div class="box box-4" style="--img: url('image/moeko1.jpg');" data-text="Sekine Moeko"></div> 
+        </div>
+        <div class="button-container2">
+            <button class="button-video2" onclick="showSwal1()">Klik di sini</button>
+    </div>
+    </div>
+    <div id="section3" class="section3">
+        <div class="audio-1">
+            <p class="op">Opening 1</p>
+            <audio id="audio1" src="image/opening1.mp3"></audio>
+            <div class="audio-controls">
+                <button class="button-audio" onclick="togglePlayPause('audio1')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#ffffff" d="M8 5v14l11-7z" />
+                    </svg>
+                </button>
+                <div class="slider-container">
+                    <input type="range" class="slider" id="audio1-slider" value="0" min="0" max="100">
+                    <div class="slider-value" id="audio1-slider-value">0:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="audio-2">
+            <p class="op">Opening 2</p>
+            <audio id="audio2" src="image/opening2.mp3"></audio>
+            <div class="audio-controls">
+                <button class="button-audio" onclick="togglePlayPause('audio2')">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#ffffff" d="M8 5v14l11-7z" />
+                    </svg>
+                </button>
+                <div class="slider-container">
+                    <input type="range" class="slider" id="audio2-slider" value="0" min="0" max="100">
+                    <div class="slider-value" id="audio2-slider-value">0:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="button-video3" onclick="showSwal2()">Klik di sini</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
